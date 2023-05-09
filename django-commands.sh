@@ -20,4 +20,4 @@ python manage.py startapp profiles_api
 edit settings.py under profiles_project, add in the dependencies in the installed app
 
 ## test changes to a django project by using the django development server
-python manage.py runserve 0.0.0.0:8000
+python manage.py runserver 0.0.0.0:8000
