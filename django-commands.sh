@@ -21,3 +21,16 @@ edit settings.py under profiles_project, add in the dependencies in the installe
 
 ## test changes to a django project by using the django development server
 python manage.py runserver 0.0.0.0:8000
+
+## creating migrations
+python manage.py makemigrations profiles_api
+python manage.py migrate
+
+## set up django admin
+python manage.py createsuperuser
+
+##connecting to vagrant server
+vagrant ssh
+cd /vagrant
+source ~/env/bin/activate
+python manage.py runserver 0.0.0.0:8000
